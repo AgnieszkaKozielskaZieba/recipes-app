@@ -1,0 +1,4 @@
+.RecipiesContainer{
+	display: flex;
+	justify-content: space-around;
+}
