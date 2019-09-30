@@ -1,33 +1,34 @@
-.RecipieCard{
+.RecipieCard {
 	border: 1px black solid;
-	width:31%;
+	width: 31%;
 	background-color: white;
 }
 
-.RecipeImg{
+.RecipeImg {
 	width: 100%;
-	height:50%;
+	height: 50%;
 }
 
-.RecipieContent{
+.RecipieContent {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	height:50%;
+	height: 50%;
 	padding: 10px;
 	padding-left: 20px;
 	box-sizing: border-box;
 }
 
-h2{
+h2 {
 	margin-top: 0;
 	margin-bottom: 0px;
 }
-h4{
+h4 {
 	margin-top: 0;
 	margin-bottom: 5px;
 }
-.RecipieContent ul, .RecipieContent p{
+.RecipieContent ul,
+.RecipieContent p {
 	margin-top: 0;
 	margin-bottom: 0px;
 }

@@ -1,15 +1,15 @@
-.recipe-form-line{
+.recipe-form-line {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 }
-.recipe-form-lineR{
+.recipe-form-lineR {
 	width: 100%;
 	display: flex;
 	flex-direction: row-reverse;
 }
 
-.recipeContainer{
+.recipeContainer {
 	display: flex;
 	flex-direction: column;
 	border: 3px solid darkblue;
@@ -20,13 +20,14 @@
 	margin-bottom: 20px;
 }
 
-button{
+button {
 	align-self: flex-end;
 }
-label{
+label {
 	margin-right: 10px;
 }
-input, textarea{
+input,
+textarea {
 	flex-basis: 100%;
 	min-width: 10px;
 }

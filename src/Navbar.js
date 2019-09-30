@@ -1,34 +1,31 @@
-import React,{Component} from "react"
-import "./Navbar.css"
+import React, { Component } from "react";
+import "./Navbar.css";
 
-class Navbar extends Component{
-	static defaultProps={
-		onNewRecipe(){}
+class Navbar extends Component {
+	static defaultProps = {
+		onNewRecipe() {}
+	};
+	constructor(props) {
+		super(props);
+		this.handleNewRecipe = this.handleNewRecipe.bind(this);
 	}
-	constructor(props){
-		super(props)
-		this.handleNewRecipe=this.handleNewRecipe.bind(this)
+	handleNewRecipe(e) {
+		e.preventDefault();
+		this.props.onNewRecipe();
 	}
-	handleNewRecipe(e){
-		e.preventDefault()
-		this.props.onNewRecipe()
-	}
-	render(){
-		return(
+	render() {
+		return (
 			<div className="Container">
-			<div className="Title">
-			Recipe App
+				<div className="Title">Recipe App</div>
+				<nav className="ContainerElements">
+					<li onClick={this.handleNewRecipe}>New Recipe</li>
+					<li>Home</li>
+					<li>About</li>
+					<li>Contact us</li>
+				</nav>
 			</div>
-			<nav className="ContainerElements">
-			<li onClick={this.handleNewRecipe}>New Recipe</li>
-			<li>Home</li>
-			<li>About</li>
-			<li>Contact us</li>
-
-			</nav>
-			</div>
-		)
+		);
 	}
 }
 
-export default Navbar
+export default Navbar;

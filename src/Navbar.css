@@ -1,20 +1,19 @@
-.Container{
+.Container {
 	display: flex;
 	justify-content: space-between;
-	background-color: rgb(50,50,50);
+	background-color: rgb(50, 50, 50);
 	margin-bottom: 20px;
 }
 
-
-
-
-.Title, .ContainerElements li{
+.Title,
+.ContainerElements li {
 	color: white;
 	list-style-type: none;
 	margin: 0 10px;
 }
 
-.ContainerElements, .Title{
+.ContainerElements,
+.Title {
 	display: flex;
 	margin: 20px;
 }
